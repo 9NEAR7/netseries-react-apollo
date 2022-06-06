@@ -5,11 +5,30 @@ const Serie = (props) => {
   return (
     <div>
       <div>
-        {serie.name} 
-        {serie.description} 
-        {serie.year} 
-        {serie.seasons}  
-        ({serie.url})
+        <b>{serie.name}</b><br></br> 
+        <ul>            
+            <li>
+                <b><span>Descripción</span></b><br></br>
+                {serie.description}
+            </li>
+            
+            <li>
+                <b><span>Año de lanzamiento</span></b><br></br>
+                {serie.year}
+            </li>
+         
+            <li>
+                <b><span>Temporadas</span></b><br></br>
+                {serie.seasons}
+            </li>
+
+            <li>
+                <b><span>Imagen</span></b><br></br>
+                <a href={serie.url}>{serie.url}</a>
+            </li>    
+
+        </ul>
+        
       </div>
     </div>
   );

@@ -113,7 +113,9 @@ const CreateSerie = () => {
         <button type="submit">Submit</button>
       </form>
     </div>
+    
   );
+   
 };
 
 export default CreateSerie;

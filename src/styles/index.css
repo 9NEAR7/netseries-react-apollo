@@ -13,11 +13,11 @@ input {
 }
 
 .orange {
-  background-color: #ff6600;
+  background-color: #15c8f5;
 }
 
 .background-gray {
-  background-color: rgb(246, 246, 239);
+  background-color: rgb(219, 219, 219);
 }
 
 .f11 {
@@ -40,4 +40,14 @@ input {
   border-color: buttonface;
   cursor: pointer;
   max-width: 250px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 5px;
+  border-radius: 50%;
 }
