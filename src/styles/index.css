@@ -1,3 +1,7 @@
+html{
+  background-color: #8a9497;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -42,12 +46,97 @@ input {
   max-width: 250px;
 }
 
-.logo {
+
+.contenedor{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.moneda{
+  background-color: aliceblue(255, 115, 0);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 20%;
+}
+
+.moneda::before{
+  content: '';
+  display: inline-block;
+  background-color: aliceblue(255, 145, 0);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 20%;
+  left: -6px;
+  top: -2px;
+  animation: salto 0.8s infinite;
+}
+
+.moneda::after{
+  content: '';
+  display: inline-block;
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/150px-Python-logo-notext.svg.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-size: 90px 90px;
   background-repeat: no-repeat;
-  background-position: center ;
-  background-size: contain;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 5px;
-  border-radius: 50%;
+  top: 2px;
+}
+
+@keyframes salto{
+  0%, 100%{top: 0;}
+  30% {top: -25px;}
+}
+
+
+.container-object{
+  background-color: #8a9497;
+  width: 1250px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+
+}
+
+
+
+.imagenSerie{
+ 
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display:grid;
+  align-items: center;
+  
+
+}
+
+.titulo{
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+}
+
+.titulos2{
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+}
+
+.pdes{
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #2b3132;
+  
+}
+
+.header-name{
+  color: #2b3132;
 }
